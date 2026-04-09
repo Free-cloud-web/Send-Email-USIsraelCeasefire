@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Send Email</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G6BG8KV70C"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-G6BG8KV70C');
+</script>
+
+<script>
+
+const subjects = [
+"Urgent Appeal: Stand with the Iranian People in their Quest for Democracy",
+"Iran at a Historic Crossroads: The World Must Not Stay Silent",
+"A Nation Under Siege: The Iranian People Need Your Voice",
+"The Iranian Revolution for Freedom Needs Global Support",
+"Silence Means Complicity: Iran’s Democratic Movement Needs Recognition",
+"The Iranian People Demand Freedom – The World Must Respond",
+"Iran’s Cry for Democracy: A Call to the International Community",
+"Stand on the Right Side of History – Support the Iranian People",
+"Internet Blackout, Brutal Crackdown: Iran’s People Need the World’s Support",
+"A Nation Fighting for Freedom: Urgent Message from the Iranian People",
+"Iran’s Democratic Movement Cannot Be Ignored",
+"The Iranian People’s Struggle for Freedom Needs International Support",
+"Iran’s Historic Moment: A Call for Global Leadership",
+"The World Must Hear Iran’s Silenced Voices",
+"Freedom, Democracy, and Justice for Iran – A Global Responsibility"
+];
+
+const bodies = [
+`Honorable Leaders and Representatives,
+
+We, the people of Iran and the global Iranian diaspora, are reaching out to you at a critical turning point in our history. For over 70 days, a national revolution has been unfolding across Iran, ignited by the tragic loss of thousands of innocent lives—including an estimated 40,000 victims of state violence. This movement, seeking a transition to democracy under the leadership of Crown Prince Reza Pahlavi, represents the unwavering will of a nation yearning for freedom.
+
+Currently, the Islamic Republic has imposed a near-total internet blackout, effectively severing the Iranian people's connection to the world. Behind this wall of silence, peaceful protesters are facing brutal suppression. As Iranians abroad, we have become the voice of those who have been silenced within our borders.
+
+We call upon you, as leaders of the international community, to:
+- Recognize the Iranian people's right to self-determination and a secular democracy.
+- Condemn the ongoing violence and the systematic violation of human rights.
+- Support the Iranian people in their effort to overcome this regime and establish a democratic government.
+- Support a unified Iran by upholding its territorial integrity and recognizing the Iranian people's right to determine their own political destiny.
+
+The world is watching. We ask you to stand on the right side of the history and support the Iranian people’s struggle for a future built on democratic values.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+At this decisive moment in Iran’s history, we address you as members of the Iranian nation and the global Iranian diaspora. For more than seventy days, a nationwide revolution has spread across Iran following the deaths of thousands of innocent citizens, including an estimated 40,000 victims of state violence. This movement reflects the clear and determined will of the Iranian people to achieve democracy under the leadership of Crown Prince Reza Pahlavi.
+
+The Islamic Republic has attempted to silence this uprising by imposing a near-total internet blackout, isolating the Iranian population from the outside world. Behind this forced silence, peaceful demonstrators are facing severe repression. As Iranians abroad, we have become the voice for those who cannot safely speak within Iran.
+
+We urge the international community to:
+- Recognize the Iranian people's right to self-determination and democratic governance.
+- Condemn the ongoing violence and systematic human rights violations.
+- Support the Iranian people's effort to overcome authoritarian rule and establish a democratic government.
+- Affirm Iran’s territorial integrity and national unity while recognizing the Iranian people’s sovereign right to freely determine their political future.
+
+History will remember this moment. We ask you to stand with the Iranian people in their struggle for a democratic future.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+Iran stands at one of the most critical moments in its modern history. For over seventy days, millions of Iranians have risen in a nationwide revolution after the tragic deaths of thousands of innocent civilians, including an estimated 40,000 victims of state violence. This uprising reflects the unwavering determination of the Iranian people to build a democratic future under the leadership of Crown Prince Reza Pahlavi.
+
+In response, the regime has imposed a near-total internet blackout, cutting the Iranian people off from the world. Behind this digital curtain, peaceful protesters are facing brutal repression. Iranians living abroad have therefore taken on the responsibility of carrying the voices of those inside the country to the international community.
+
+We respectfully call upon you to:
+- Recognize the Iranian people's right to determine their democratic future.
+- Condemn the regime’s violence and systematic violations of human rights.
+- Support the Iranian people's efforts to establish a democratic government.
+- Reaffirm the unity and territorial integrity of Iran and support the Iranian people's sovereign right to decide their future political system freely.
+
+The world is watching this historic struggle. We urge you to stand on the right side of history and support the Iranian people's fight for democracy.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+We write to you as the Iranian nation faces a historic turning point. For more than seventy days, a powerful national uprising has spread across Iran following the loss of thousands of innocent lives, including an estimated 40,000 civilians killed through state violence. This movement demonstrates the clear will of the Iranian people to move toward democracy under the leadership of Crown Prince Reza Pahlavi.
+
+The Islamic Republic has responded with harsh repression and a near-total shutdown of the internet, isolating the population and hiding its actions from the world. Under these conditions, peaceful protesters are subjected to severe brutality. As Iranians abroad, we have taken on the responsibility of ensuring their voices are heard.
+
+We call upon you to:
+- Recognize the Iranian people's right to democratic self-determination.
+- Condemn the regime’s violent suppression and ongoing human rights violations.
+- Support the Iranian people's struggle to replace dictatorship with democracy.
+- Support the unity and territorial integrity of Iran and uphold the Iranian people’s sovereign right to freely determine their democratic future.
+
+History will judge how the world responded at this moment. We urge you to stand with the Iranian people in their pursuit of democracy.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+Iran is experiencing a nationwide revolution driven by the courage and sacrifice of its people. For more than seventy days, citizens across the country have risen after the deaths of thousands of innocent individuals, including an estimated 40,000 victims of state violence. This movement reflects the determined will of the Iranian nation to establish democracy under the leadership of Crown Prince Reza Pahlavi.
+
+The regime has imposed a near-total internet blackout in an attempt to hide the scale of its repression. Behind this silence, peaceful demonstrators are facing brutal crackdowns. Iranians abroad have therefore become the voice of those who cannot speak freely within the country.
+
+We urge you to:
+- Recognize the Iranian people's right to democratic self-determination.
+- Condemn the ongoing violence and human rights violations.
+- Support the Iranian people's efforts to establish a democratic government.
+- Support the unity and territorial integrity of Iran and uphold the Iranian people’s sovereign right to freely determine their democratic future.
+
+The world must not remain silent. We ask you to stand on the right side of history and support the Iranian people's struggle for democracy.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+For more than seventy days, Iran has been witnessing a powerful nationwide uprising sparked by the deaths of thousands of innocent citizens, including an estimated 40,000 victims of state violence. This movement represents the unified demand of the Iranian people for freedom and democracy under the leadership of Crown Prince Reza Pahlavi.
+
+In response, the Islamic Republic has imposed a near-total internet shutdown and intensified its repression against peaceful protesters. Deprived of communication with the outside world, millions of Iranians rely on the diaspora to ensure their voices reach the global community.
+
+We respectfully call on you to:
+- Recognize the Iranian people's right to determine their political future.
+- Condemn the regime’s brutal repression and systematic human rights abuses.
+- Support the Iranian people's struggle to establish a democratic government.
+- Support the unity and territorial integrity of Iran and uphold the Iranian people’s sovereign right to freely determine their democratic future.
+
+The future of Iran is being shaped at this very moment. We ask you to stand with the Iranian people and support their fight for a democratic future.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+At this historic moment, the Iranian people are engaged in a nationwide movement for freedom and democracy. For over seventy days, citizens across the country have protested despite the tragic deaths of thousands of innocent individuals, including an estimated 40,000 victims of state violence. This revolution reflects the determination of the Iranian nation to achieve democracy under the leadership of Crown Prince Reza Pahlavi.
+
+The regime has responded by shutting down internet access and violently suppressing peaceful protesters. Under these conditions, Iranians abroad have taken on the responsibility of bringing the voices of the Iranian people to the international community.
+
+We ask you to:
+- Recognize the Iranian people's right to democratic governance.
+- Condemn the violence and human rights violations committed by the regime.
+- Support the Iranian people's struggle to establish a democratic future.
+- Support the unity and territorial integrity of Iran and uphold the Iranian people’s sovereign right to freely determine their democratic future.
+
+The international community must not ignore this historic moment. We urge you to stand with the Iranian people in their pursuit of a democratic future.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+Iran is witnessing one of the most significant democratic uprisings in its history. For more than seventy days, citizens have risen across the nation after the deaths of thousands of innocent people, including an estimated 40,000 victims of state violence. This movement reflects the clear demand of the Iranian people for democracy under the leadership of Crown Prince Reza Pahlavi.
+
+The Islamic Republic has imposed a near-total internet blackout to conceal its repression. Behind this silence, peaceful demonstrators are facing severe brutality. As Iranians abroad, we have become the voice of those who cannot safely speak within Iran.
+
+We urge you to:
+- Recognize the Iranian people's right to self-determination.
+- Condemn the ongoing repression and violations of human rights.
+- Support the Iranian people's effort to establish democracy.
+- Support the unity and territorial integrity of Iran and uphold the Iranian people’s sovereign right to freely determine their democratic future.
+
+The world must not remain indifferent. We ask you to stand with the Iranian people and support their struggle for a democratic future.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+The Iranian nation is currently engaged in a historic struggle for freedom. For more than seventy days, citizens across Iran have protested despite the deaths of thousands of innocent individuals, including an estimated 40,000 victims of state violence. This movement represents the collective will of the Iranian people to build a democratic future under the leadership of Crown Prince Reza Pahlavi.
+
+In response, the regime has imposed severe restrictions including a near-total internet blackout while violently suppressing peaceful demonstrations. Iranians living abroad have therefore taken on the responsibility of ensuring the voices of those inside Iran are heard around the world.
+
+We call on you to:
+- Recognize the Iranian people's right to democratic self-determination.
+- Condemn the regime’s violent repression.
+- Support the Iranian people's efforts to establish democracy.
+- Affirm Iran’s territorial integrity and national unity, while recognizing the sovereign right of the Iranian people to freely determine their future political system.
+
+The course of history is unfolding now. We urge you to stand with the Iranian people in their fight for a democratic future.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+For more than seventy days, Iran has been shaken by a nationwide revolution driven by the courage of its citizens. Thousands of innocent people have lost their lives, including an estimated 40,000 victims of state violence. This movement reflects the determination of the Iranian people to achieve democracy under the leadership of Crown Prince Reza Pahlavi.
+
+The regime has responded with repression and a near-total internet blackout designed to hide its actions from the world. Behind this barrier of silence, peaceful protesters continue to face brutality. Iranians abroad have therefore become the voice of those who cannot speak freely.
+
+We respectfully ask you to:
+- Recognize the Iranian people's right to democratic governance.
+- Condemn the ongoing violence and human rights violations.
+- Support the Iranian people's struggle to establish democracy.
+- Support the unity and territorial integrity of Iran and uphold the Iranian people’s sovereign right to decide their political future through their own free will.
+
+History will remember who stood with the Iranian people. We urge you to support their fight for a democratic future.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+Iran today stands at a defining historical moment. For more than seventy days, millions of citizens have risen in a nationwide revolution after the deaths of thousands of innocent people, including an estimated 40,000 victims of state violence. This movement represents the unwavering determination of the Iranian people to establish democracy under the leadership of Crown Prince Reza Pahlavi.
+
+The Islamic Republic has imposed a near-total internet blackout and intensified repression against peaceful protesters. As a result, Iranians abroad have taken on the responsibility of bringing the voices of those inside Iran to the global stage.
+
+We urge the international community to:
+- Recognize the Iranian people's right to determine their democratic future.
+- Condemn the regime’s brutal repression.
+- Support the Iranian people's struggle to establish democracy.
+- Reaffirm the indivisibility and territorial integrity of Iran and recognize the Iranian people’s right to freely determine their future system of governance.
+
+The world must stand on the right side of history and support the Iranian people's struggle for a democratic future.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+The people of Iran are currently engaged in a nationwide struggle for freedom and democracy. For over seventy days, protests have spread across the country following the tragic deaths of thousands of innocent citizens, including an estimated 40,000 victims of state violence. This movement reflects the clear will of the Iranian nation to establish democracy under the leadership of Crown Prince Reza Pahlavi.
+
+The regime has responded with a near-total internet shutdown and violent repression aimed at silencing the population. As members of the Iranian diaspora, we have taken on the responsibility of ensuring the voices of our fellow citizens reach the international community.
+
+We ask you to:
+- Recognize the Iranian people's right to democratic self-determination.
+- Condemn the ongoing violence and human rights violations.
+- Support the Iranian people's efforts to build a democratic future.
+- Stand for a united Iran by affirming its territorial integrity and acknowledging the sovereign right of its people to shape their own political future.
+
+We urge you to stand with the Iranian people in their historic fight for a democratic future.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+Iran is experiencing a powerful nationwide movement driven by the courage of its citizens. For more than seventy days, people across the country have protested despite the deaths of thousands of innocent individuals, including an estimated 40,000 victims of state violence. This movement represents the determination of the Iranian nation to achieve democracy under the leadership of Crown Prince Reza Pahlavi.
+
+The regime has imposed a near-total internet blackout in an attempt to silence the population and hide the repression from the world. Iranians abroad have therefore become the voice of those who cannot safely speak inside the country.
+
+We respectfully call on you to:
+- Recognize the Iranian people's right to determine their political future.
+- Condemn the violent repression and human rights violations.
+- Support the Iranian people's struggle to establish democracy.
+- Recognize and protect the territorial integrity of Iran while supporting the Iranian people’s right to freely determine their democratic future.
+
+This is a defining moment for Iran and for the international community. We ask you to stand with the Iranian people and support their fight for a democratic future.
+
+Sincerely,
+The Concerned People of Iran`,
+
+`Honorable Leaders and Representatives,
+
+For more than seventy days, Iran has witnessed a nationwide revolution fueled by the courage of its citizens and the tragic loss of thousands of innocent lives, including an estimated 40,000 victims of state violence. This movement represents the clear determination of the Iranian people to establish democracy under the leadership of Crown Prince Reza Pahlavi.
+
+The Islamic Republic has attempted to silence this movement through a near-total internet blackout while violently suppressing peaceful protesters. Under these circumstances, Iranians living abroad have become the voice of those who cannot safely speak within Iran.
+
+We urge you to:
+- Recognize the Iranian people's right to democratic self-determination.
+- Condemn the ongoing violence and violations of human rights.
+- Support the Iranian people's effort to establish a democratic government.
+- Affirm Iran’s unity and reject any fragmentation of the country, while recognizing the Iranian people’s sovereign right to choose their political system.
+
+The world must stand with the Iranian people in their historic struggle for democracy.
+
+Sincerely,
+The Concerned People of Iran`
+];
+
+function sendEmail(){
+
+const subject = subjects[Math.floor(Math.random() * subjects.length)];
+const body = bodies[Math.floor(Math.random() * bodies.length)];
+
+gtag('event','mailto_open',{
+event_category:'Email Campaign',
+event_label:'GitHub Redirect'
+});
+
+const mailto =
+"mailto:internetpost@bundeskanzleramt.de"
++ "?bcc=poststelle@auswaertiges-amt.de,auswaertiger-ausschuss@bundestag.de,menschenrechtsausschuss@bundestag.de,parteivorstand@spd.de,info@gruene.de,info@fdp.de,post@cdu.de,info.drh@diplomatie.gouv.fr,commission.aff-etrangeres.sec@assemblee-nationale.fr,contact@parti-renaissance.fr,contact@republicains.fr,contact@lafranceinsoumise.fr,communication.cncdh@cncdh.fr,pm@pm.gc.ca,melanie.joly@parl.gc.ca,bill.blair@parl.gc.ca,pierre.poilievre@parl.gc.ca,michael.chong@parl.gc.ca,rob.oliphant@parl.gc.ca"
++ "&subject=" + encodeURIComponent(subject) 
++ "&body=" + encodeURIComponent(body);
+
+window.location.href = mailto;
+
+}
+
+window.onload = sendEmail;
+
+</script>
+
+</head>
+
+<body>
+<p>اگه شما این پیام رو قبل از بازشدن ایمیل تون و کلیک روی ارسال می بینین. روی سه نقطه بالا سمت راست بزنین و open in external brower رو انتخاب کنین. </p>
+</body>
+</html>
